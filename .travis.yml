@@ -1,7 +1,9 @@
 language: general
 
+sudo: required
+
 before_install:
-  - pip install pre-commit
+  - sudo pip install pre-commit
 
 script:
   - pre-commit run --all-files
